@@ -1,0 +1,50 @@
+type: object
+required:
+  - _id
+  - name
+  - gender
+  - year
+  - avatar
+  - ownerId
+  - createdAt
+  - updatedAt
+properties:
+  _id:
+    type: string
+    description: Student id
+    example: 68efd41636a23320bb4ef586
+  name:
+    type: string
+    description: Student name
+    example: John Deere
+  gender:
+    type: string
+    description: Student gender
+    enum: ['male', 'female']
+    example: male
+  year:
+    type: integer
+    description: Student year
+    example: 1998
+  avatar:
+    type: string
+    description: Student avatar
+    default: null
+    example: https://res.cloudinary.com/dha4xvgfi/image/upload/v1759947947/aclxd7sbpsrb8hviowbe.jpg
+  onDuty:
+    type: boolean
+    description: Student on onDuty
+    default: false
+    example: true
+  ownerId:
+    type: string
+    description: Student owner id
+    example: 68efd834f1781f960b1e7a6c
+  createdAt:
+    type: string
+    format: date-time
+    example: 2025-10-08T18:21:10.157+00:00
+  updatedAt:
+    type: string
+    format: date-time
+    example: 2025-10-08T18:21:10.157+00:00
